@@ -13,7 +13,7 @@ const HeroSection = () => {
        {" "}
        Hello, I'm{" "}
       </span>
-      <br ></br>
+      <br></br>
       {/* type animation:  */}
       <TypeAnimation
        sequence={[
