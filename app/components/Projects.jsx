@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
 
 const projectsData = [
  {
@@ -85,6 +86,16 @@ const projectsData = [
 ];
 
 const Projects = () => {
+ const [tag, setTag] = useState("All");
+
+ const handleTagChange = (newTag) => {
+  setTag(newTag);
+ };
+
+ const filteredProjects = projectsData.filter((project) =>
+  project.tag.includes(tag)
+ );
+
  return (
   <>
    {" "}
@@ -93,21 +104,27 @@ const Projects = () => {
    </h2>
    <div className='text-white flex flex-row justify-center items-center gap-2  py-6 '>
     {/* all */}
-    <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
-     All
-    </button>
+    <ProjectTag
+     onClick={handleTagChange}
+     name='All'
+     isSelected={tag === "All"}
+    />
     {/* web */}
-    <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-     Web
-    </button>
+    <ProjectTag
+     onClick={handleTagChange}
+     name='Web'
+     isSelected={tag === "Web"}
+    />
     {/* mobile */}
-    <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
-     Mobile
-    </button>
+    <ProjectTag
+     onClick={handleTagChange}
+     name='Mobile'
+     isSelected={tag === "Mobile"}
+    />
    </div>
    {/*  */}
    <ul className='grid md:grid-cols-3 gap-8 md:gap-12'>
-    {projectsData.map((project) => (
+    {filteredProjects.map((project) => (
      <ProjectCard
       key={project.id}
       imgUrl={project.image}
