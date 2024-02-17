@@ -30,8 +30,8 @@ const HeroSection = () => {
                 1000,
                 "Developer",
                 1000,
-                "Jin",
-                1000,
+                // "Jin",
+                // 1000,
               ]}
               wrapper="span"
               speed={50}
@@ -60,7 +60,7 @@ const HeroSection = () => {
               href="/#projects"
               className="mt-3 inline-block w-full rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-800 sm:w-fit"
             >
-              <span className="block rounded-full bg-[#121212] px-5 py-2 hover:bg-slate-800">
+              <span className="block rounded-full bg-gray-900 px-5 py-2 hover:bg-slate-800">
                 Projects
               </span>
             </Link>
@@ -74,9 +74,9 @@ const HeroSection = () => {
           className="col-span-4 mt-4 place-self-center lg:mt-0"
         >
           {" "}
-          <div className="relative h-[200px] w-[200px] rounded-full bg-[#181818]/10 lg:h-[400px] lg:w-[400px]">
+          <div className="relative h-[200px] w-[200px] rounded-full bg-violet-800/10 lg:h-[300px] lg:w-[300px]">
             <Image
-              src="/hero2.png "
+              src="/hero5.png"
               width={300}
               height={300}
               alt="hero"

@@ -13,6 +13,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           {/* link */}
           <Link
             href={gitUrl}
+            target="_blank"
             className="group/link relative mr-2 h-14 w-14 rounded-full border-2 border-gray-400 hover:border-white"
           >
             {/* icons */}
@@ -21,6 +22,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           {/* link */}
           <Link
             href={previewUrl}
+            target="_blank"
             className="group/link relative h-14 w-14 rounded-full border-2 border-gray-400 hover:border-white"
           >
             {/* icons */}
@@ -28,7 +30,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="mt-3 rounded-b-xl bg-[#181818] px-4 py-6 text-white">
+      <div className="mt-3 rounded-b-xl bg-gray-900 px-4 py-6 text-white">
         <h5 className="mb-2 text-xl font-semibold">{title}</h5>
         <p className="text-gray-400">{description}</p>
       </div>
