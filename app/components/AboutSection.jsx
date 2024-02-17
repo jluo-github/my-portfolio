@@ -18,9 +18,9 @@ const TAB_DATA = [
         <li>Spring Boot</li>
         <li>Node.js</li>
         <li>Express</li>
+        <li>MERN</li>
         <li>MySQL</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
         <li>HTML/CSS</li>
         <li>Tailwind</li>
         <li>SCSS</li>
