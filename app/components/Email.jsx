@@ -6,124 +6,129 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Email = () => {
- const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const data = {
-   email: e.target.email.value,
-   subject: e.target.subject.value,
-   message: e.target.message.value,
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+    const result = await response.json();
+
+    // console.log("result : ", result);
+
+    if (!result.error) {
+      console.log("Email sent successfully");
+      setEmailSubmitted(true);
+    }
   };
 
-  const JSONdata = JSON.stringify(data);
-  const endpoint = "/api/send";
+  return (
+    <section
+      id="contact"
+      className="relative my-12 grid   gap-4 py-24 md:my-12 md:grid-cols-2 "
+    >
+      <div className="-translate-1/2 absolute -left-4 top-3/4 z-0 h-80 w-80 -translate-x-1/2 transform rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent blur-lg"></div>
+      <div className="z-20">
+        <h5 className="my-2 text-xl font-bold text-white">
+          {" "}
+          Let&apos;s Connect{" "}
+        </h5>
+        <p className="mb-4 max-w-md text-gray-400">
+          I&apos;m always open to new opportunities and meeting new people. If
+          you&apos;d like to get in touch, feel free to send me an email.
+        </p>
+        <div className="socials flex flex-row gap-2 ">
+          <Link href="https://github.com">
+            <Image src={GithubIcon} alt="github" width={40} height={40} />
+          </Link>
 
-  const options = {
-   method: "POST",
-   headers: {
-    "Content-Type": "application/json",
-   },
-   body: JSONdata,
-  };
+          <Link href="https://linkedin.com">
+            <Image src={LinkedInIcon} alt="linkedin" width={40} height={40} />
+          </Link>
+        </div>
+      </div>
 
-  const response = await fetch(endpoint, options);
-  const result = await response.json();
-
-  console.log("result : ", result);
-
-  if (!result.error) {
-   console.log("Email sent successfully");
-   setEmailSubmitted(true);
-  }
- };
-
- return (
-  <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative '>
-   <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-full -left-4 transform -translate-x-1/2 -translate-1/2'></div>
-   <div className='z-10'>
-    <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
-    <p className='text-[#adb7be] mb-4 max-w-md'>
-     I'm always open to new opportunities and meeting new people. If you'd like
-     to get in touch, feel free to send me an email.
-    </p>
-    <div className='socials flex flex-row gap-2 '>
-     <Link href='https://github.com'>
-      <Image src={GithubIcon} alt='github' width={40} height={40} />
-     </Link>
-
-     <Link href='https://linkedin.com'>
-      <Image src={LinkedInIcon} alt='linkedin' width={40} height={40} />
-     </Link>
-    </div>
-   </div>
-
-   <div>
-    <form action='' className='flex flex-col ' onSubmit={handleSubmit}>
-     <div className='mb-6'>
-      {" "}
-      <label
-       htmlFor='email'
-       className='text-white block mb-2  text-sm font-medium'>
-       Your email{" "}
-      </label>
-      <input
-       name='email'
-       type='email'
-       id='email'
-       required
-       placeholder='Email '
-       className='bg-[#18191e] border-[#33353f] placeholder-[#9ca2a9]
-       text-gray-100 text-sm rounded-lg block p-2 w-full'
-      />
-     </div>
-
-     <div className='mb-6'>
-      <label
-       htmlFor='subject'
-       className='text-white block mb-2 text-sm font-medium'>
-       Subject
-      </label>
-      <input
-       name='subject'
-       type='text'
-       id='subject'
-       required
-       placeholder='Subject '
-       className='bg-[#18191e] border-[#33353f] placeholder-[#9ca2a9]
-       text-gray-100 text-sm rounded-lg block p-2 w-full'
-      />
-     </div>
-
-     <div className='mb-6'>
-      <label
-       htmlFor='message'
-       className='text-white block mb-2 text-sm font-medium'>
-       Message
-      </label>
-      <textarea
-       name='message'
-       id='message'
-       required
-       placeholder='Message... '
-       className='bg-[#18191e] border-[#33353f] placeholder-[#9ca2a9]
-       text-gray-100 text-sm rounded-lg block p-2 w-full'
-      />
-     </div>
-
-     <button
-      type='submit'
-      className='bg-violet-800 hover:bg-violet-700 text-white font-medium py-2.5 rounded-lg w-full'>
-      Send Message
-     </button>
-     {emailSubmitted && (
-      <p className='text-green-500 text-center mt-4'>Email sent successfully</p>
-     )}
-    </form>
-   </div>
-  </section>
- );
+      <div>
+        {emailSubmitted ? (
+          <p className="mt-2 text-sm text-green-500">
+            Email sent successfully!
+          </p>
+        ) : (
+          <form className="flex flex-col" onSubmit={handleSubmit}>
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="mb-2 block text-sm font-medium text-white"
+              >
+                Your email
+              </label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                required
+                className="block w-full rounded-lg border border-gray-700 bg-[#18191E] p-2.5 text-sm text-gray-100 placeholder-[#9CA2A9]"
+                placeholder="Email"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="subject"
+                className="mb-2 block text-sm font-medium text-white"
+              >
+                Subject
+              </label>
+              <input
+                name="subject"
+                type="text"
+                id="subject"
+                required
+                className="block w-full rounded-lg border border-gray-700 bg-[#18191E] p-2.5 text-sm text-gray-100 placeholder-[#9CA2A9]"
+                placeholder="Subject..."
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="message"
+                className="mb-2 block text-sm font-medium text-white"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                className="block w-full rounded-lg border border-gray-700 bg-[#18191E] p-2.5 text-sm text-gray-100 placeholder-[#9CA2A9]"
+                placeholder="Message..."
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full rounded-lg bg-primary-500 px-5 py-2.5 font-medium text-white hover:bg-primary-600"
+            >
+              Send Message
+            </button>
+          </form>
+        )}
+      </div>
+    </section>
+  );
 };
 
 export default Email;

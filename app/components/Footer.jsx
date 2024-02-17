@@ -1,11 +1,11 @@
 const Footer = () => {
- return (
-  <footer className='footer border border-t-[#33353f] border-l-transparent border-r-transparent text-white'>
-   <div className='container p-12 flex justify-between'>
-    <span>logo</span>
-    <p className='text-slate-700'>All rights reserved.</p>
-   </div>
-  </footer>
- );
+  return (
+    <footer className="footer z-20 border border-l-transparent border-r-transparent border-t-gray-700 text-white">
+      <div className="container flex  justify-between p-12 ">
+        <span></span>
+        <p className="text-slate-600">All rights reserved.</p>
+      </div>
+    </footer>
+  );
 };
 export default Footer;
