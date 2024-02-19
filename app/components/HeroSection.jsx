@@ -15,7 +15,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center justify-self-start text-center sm:text-left"
         >
           <h1 className="mb-2 text-4xl font-extrabold text-white sm:text-5xl lg:text-8xl lg:leading-normal ">
-            <span className="bg-gradient-to-r from-primary-500 to-secondary-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
               {" "}
               Hello, I&apos;m{" "}
             </span>
@@ -52,13 +52,13 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="mr-4 inline-block w-full rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit"
+              className="mr-4 inline-block w-full rounded-full bg-gradient-to-br from-primary-700 to-secondary-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit"
             >
               Contact Me
             </Link>
             <Link
               href="/#projects"
-              className="mt-3 inline-block w-full rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-800 sm:w-fit"
+              className="mt-3 inline-block w-full rounded-full bg-gradient-to-br from-primary-700 to-secondary-500 px-1 py-1 text-white hover:bg-slate-800 sm:w-fit"
             >
               <span className="block rounded-full bg-gray-900 px-5 py-2 hover:bg-slate-800">
                 Projects
@@ -74,7 +74,7 @@ const HeroSection = () => {
           className="col-span-4 mt-4 place-self-center lg:mt-0"
         >
           {" "}
-          <div className="relative h-[200px] w-[200px] rounded-full bg-violet-800/10 lg:h-[300px] lg:w-[300px]">
+          <div className="relative h-[200px] w-[200px] rounded-full bg-primary-800/10 lg:h-[300px] lg:w-[300px]">
             <Image
               src="/hero5.png"
               width={300}
