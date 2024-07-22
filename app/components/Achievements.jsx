@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const achievements = [
   {
     metric: "Projects",
-    value: "100",
+    value: "30",
     postfix: "+",
   },
   {
@@ -20,7 +20,7 @@ const achievements = [
   },
   {
     metric: "Years",
-    value: "3",
+    value: "2",
     postfix: "+",
   },
 ];

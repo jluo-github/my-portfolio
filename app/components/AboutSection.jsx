@@ -37,13 +37,13 @@ const TAB_DATA = [
       "RESTful API | Prisma | Sequelize",
     ],
     icons: [
-      <FaHtml5 />,
-      <FaCss3 />,
-      <FaJs />,
-      <FaReact />,
-      <SiNextdotjs />,
-      <SiFramer />,
-      <FaWordpress />,
+      <FaHtml5 key="html" />,
+      <FaCss3 key="css" />,
+      <FaJs key="js" />,
+      <FaReact key="react" />,
+      <SiNextdotjs key="next" />,
+      <SiFramer key="framer" />,
+      <FaWordpress key="wordpress" />,
     ],
   },
   {
@@ -64,6 +64,10 @@ const TAB_DATA = [
       "CompTIA A+",
       "AWS Certified Cloud Practitioner",
       "ITIL4 Certificate in IT Service Management",
+      " Software Development",
+      "Full Stack Web Development",
+      "Cybersecurity | System and Network Administration",
+      "Business Software Specialist",
     ],
   },
 ];
@@ -135,7 +139,6 @@ const AboutSection = () => {
             <div className="flex flex-col items-center gap-y-2  py-2 xl:items-start xl:gap-y-4 xl:py-6">
               {" "}
               {TAB_DATA[index].content.map((item, itemIndex) => {
-                console.log("item-", item.icon);
                 return (
                   <div
                     key={itemIndex}
