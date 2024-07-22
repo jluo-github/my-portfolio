@@ -44,22 +44,34 @@ const Email = () => {
       id="contact"
       className="relative my-12 grid   gap-4 py-24 md:my-12 md:grid-cols-2 "
     >
-      <div className="-translate-1/2 absolute -left-4 top-3/4 z-0 h-80 w-80 -translate-x-1/2 transform rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent blur-lg"></div>
+      <div className="-translate-1/2 -4 absolute top-3/4 z-0 h-80 w-80 -translate-x-1/2 transform rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent blur-lg"></div>
+
+      <div className="w=[200px] absolute -left-4 top-3/4 z-0 animate-pulse  mix-blend-color-dodge duration-75 xl:w-[300px] ">
+        <Image
+          src="/about.png"
+          width={200}
+          height={200}
+          className="h-full w-full rounded-full"
+          alt="logo"
+        ></Image>
+      </div>
+
       <div className="z-20">
         <h5 className="my-2 text-xl font-bold text-white">
           {" "}
           Let&apos;s Connect{" "}
         </h5>
         <p className="mb-4 max-w-md text-gray-400">
-          I&apos;m always open to new opportunities and meeting new people. If
-          you&apos;d like to get in touch, feel free to send me an email.
+          Feel free to reach out! I&apos;m always open to new opportunities and
+          connections. If you&apos;d like to get in touch, please send me an
+          email.
         </p>
         <div className="socials flex flex-row gap-2 ">
-          <Link href="https://github.com">
+          <Link href="https://github.com/jluo-github">
             <Image src={GithubIcon} alt="github" width={40} height={40} />
           </Link>
 
-          <Link href="https://linkedin.com">
+          <Link href="https://linkedin.com/in/jluo23">
             <Image src={LinkedInIcon} alt="linkedin" width={40} height={40} />
           </Link>
         </div>

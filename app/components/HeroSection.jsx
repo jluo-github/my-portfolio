@@ -26,7 +26,7 @@ const HeroSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 "Jin",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Full-Stack",
+                "a Full-Stack",
                 1000,
                 "Developer",
                 1000,
@@ -41,12 +41,13 @@ const HeroSection = () => {
 
           <p className="mb-6 text-base text-gray-400 md:text-lg lg:text-xl">
             As a full-stack developer, I am dedicated to turning ideas into
-            reality. I am passionate about creating web applications that are
-            both functional and visually appealing. I am always eager to learn
-            new technologies and improve my skills. I am a team player and I am
-            always ready to collaborate with others to create amazing projects.
-            I am also a quick learner and I am always ready to take on new
-            challenges.
+            reality. I am passionate about continuous learning and always eager
+            to adopt new technologies to enhance my skill set. With a strong
+            commitment to teamwork and collaboration, I thrive in cooperative
+            environments where I can contribute to and learn from diverse
+            projects. My ability to quickly adapt and embrace new challenges,
+            along with my strong problem-solving skills, makes me a valuable
+            asset to any team.
           </p>
 
           <div>
