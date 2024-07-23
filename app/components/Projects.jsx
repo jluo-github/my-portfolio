@@ -34,7 +34,7 @@ const projectsData = [
     description:
       "Skills and Technologies: React, Prisma, Tailwind CSS, React-Query, Clerk, Shadcn-UI, Recharts",
     image: "/purplecat-tasks.jpg",
-    tag: ["All", "Mobile"],
+    tag: ["All"],
     gitUrl: "https://github.com/jluo-github/purplecat-tasks",
     previewUrl: "https://purple-cat-task.vercel.app",
   },
@@ -151,7 +151,7 @@ const Projects = () => {
         />
       </div>
       {/*  */}
-      <ul ref={ref} className="grid gap-8 md:grid-cols-3 md:gap-12">
+      <ul ref={ref} className="grid gap-8 md:grid-cols-3 md:gap-6">
         {filteredProjects.map((project, index) => (
           <motion.li
             variants={cardVariants}

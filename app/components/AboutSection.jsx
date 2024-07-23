@@ -111,7 +111,8 @@ const AboutSection = () => {
           <div className="flex flex-1 flex-col justify-center">
             <h2 className="mb-4 text-[35px] font-semibold leading-tight md:text-[54px] md:leading-[1.3]">
               Building <span className="text-primary-400">skills</span> and
-              Pursuing <span className="text-primary-400">excellence</span>{" "}
+              Pursuing{" "}
+              <span className="text-primary-400"> Continuous </span>Growth{" "}
             </h2>
             {/* <p className="mx-auto mb-6 max-w-[500px] px-2 xl:mx-0 xl:mb-12 xl:px-0">
               {" "}
