@@ -19,6 +19,7 @@ const Email = () => {
 
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
+    // console.log("JSONdata :", JSONdata);
 
     const options = {
       method: "POST",
@@ -31,7 +32,7 @@ const Email = () => {
     const response = await fetch(endpoint, options);
     const result = await response.json();
 
-    // console.log("result : ", result);
+
 
     if (!result.error) {
       console.log("Email sent successfully");
