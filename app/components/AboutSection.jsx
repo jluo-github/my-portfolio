@@ -27,8 +27,8 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: [
-      "JavaScript| HTML| CSS",
-      "React | Redux | Next.js",
+      "JavaScript | HTML| CSS",
+      "React | Next.js | TypeScript",
       "Git | GitHub | Docker",
       "Tailwind CSS | Bootstrap",
       "Java | Spring Boot | Maven",
@@ -51,9 +51,9 @@ const TAB_DATA = [
     id: "education",
     content: [
       "B.S. Software Engineering",
-      "- Western Governor University ",
+      "- Western Governors University ",
       "Computer Information",
-      " - Pasadena City College ",
+      " - Pasadena City College  ",
     ],
   },
 
@@ -63,7 +63,7 @@ const TAB_DATA = [
     content: [
       "CompTIA A+",
       "AWS Certified Cloud Practitioner",
-      "ITIL4 Certificate in IT Service Management",
+      "ITIL® 4 Foundation - IT Service Management",
       " Software Development",
       "Full Stack Web Development",
       "Cybersecurity | System and Network Administration",
@@ -111,8 +111,8 @@ const AboutSection = () => {
           <div className="flex flex-1 flex-col justify-center">
             <h2 className="mb-4 text-[35px] font-semibold leading-tight md:text-[54px] md:leading-[1.3]">
               Building <span className="text-primary-400">skills</span> and
-              Pursuing{" "}
-              <span className="text-primary-400"> Continuous </span>Growth{" "}
+              Pursuing <span className="text-primary-400"> Continuous </span>
+              Growth{" "}
             </h2>
             {/* <p className="mx-auto mb-6 max-w-[500px] px-2 xl:mx-0 xl:mb-12 xl:px-0">
               {" "}
