@@ -16,7 +16,6 @@ Please visit [My portfolio](https://purplecat-portfolio.vercel.app/) for more de
 npm i react-type-animation
 
 ```
-
 ### heroicons
 
 ```

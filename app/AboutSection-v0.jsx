@@ -32,7 +32,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         {" "}
-        <li>Western Governor University </li>
+        <li>Western Governors University</li>
         <div>B.S. Software Engineering</div>
         <li>Pasadena City College</li>
         <div>Computer Information</div>
