@@ -40,17 +40,6 @@ const projectsData = [
 
   {
     id: 4,
-    title: "PurpleCat GPT App",
-    description:
-      "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Clerk",
-    image: "/purplecat-gpt-app.jpg",
-    tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/jluo-github/pruplecat-gpt-app",
-    previewUrl: "https://purplecat-gpt-app.vercel.app",
-  },
-
-  {
-    id: 5,
     title: "Property Rental App",
     description:
       "Skills and Technologies: Next.js, React, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
@@ -59,6 +48,17 @@ const projectsData = [
     gitUrl:
       "https://github.com/jluo-github/property-rental-app?tab=readme-ov-file",
     previewUrl: "https://property-rental-app-eta.vercel.app",
+  },
+
+  {
+    id: 5,
+    title: "PurpleCat GPT App",
+    description:
+      "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Clerk",
+    image: "/purplecat-gpt-app.jpg",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/jluo-github/pruplecat-gpt-app",
+    previewUrl: "https://purplecat-gpt-app.vercel.app",
   },
 
   {
