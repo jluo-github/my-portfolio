@@ -23,8 +23,7 @@ const projectsData = [
       "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
     image: "/property-rental-app.jpg",
     tag: ["All", "Web", "Mobile"],
-    gitUrl:
-      "https://github.com/jluo-github/property-rental-app?tab=readme-ov-file",
+    gitUrl: "https://github.com/jluo-github/purplecat-rental",
     previewUrl: "https://purplecat-next-rental.vercel.app",
   },
 
