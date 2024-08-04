@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "PurpleCat Next Store",
     description:
-      "Skills and Technologies: Next.js, React, Tailwind CSS, Shadcn-Ui, Prisma, Supabase, Clerk, React-Share, Stripe",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcn-Ui, Prisma, Supabase, Clerk, React-Share, Stripe",
     image: "/purplecat-next-store.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/purplecat-next-store",
@@ -18,14 +18,14 @@ const projectsData = [
 
   {
     id: 2,
-    title: "Property Rental App",
+    title: "PurpleCat Rental App",
     description:
-      "Skills and Technologies: Next.js, React, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
     image: "/property-rental-app.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl:
       "https://github.com/jluo-github/property-rental-app?tab=readme-ov-file",
-    previewUrl: "https://property-rental-app-eta.vercel.app",
+    previewUrl: "https://purplecat-next-rental.vercel.app",
   },
 
   {
@@ -98,7 +98,7 @@ const projectsData = [
   //   id: 9,
   //   title: "PurpleCat StayZen",
   //   description:
-  //     "Skills and Technologies: Next.js, React, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Supabase, Zod",
+  //     "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Supabase, Zod",
   //   image: "/project8.png",
   //   tag: ["All", "Web"],
   //   gitUrl: "https://github.com/jluo-github/purplecat-next-stayzen",
