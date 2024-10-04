@@ -1,8 +1,9 @@
+import { ThemeProvider } from "@/lib/theme-provider";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import { ThemeProvider } from "@/lib/theme-provider";
 import { Toaster } from "react-hot-toast";
+import "./globals.css";
+import StoreProvider from "./StoreProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,9 +39,12 @@ export default function RootLayout({
       </head>
       <body
         className={`bg-violet-50 text-black dark:bg-slate-900 dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
-          <main className=''> {children}</main>
-        </ThemeProvider>
+        <StoreProvider>
+          <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
+            {" "}
+            <main className=''> {children}</main>
+          </ThemeProvider>
+        </StoreProvider>
         <Toaster position='bottom-center' />
       </body>
     </html>

@@ -1,17 +1,19 @@
 "use client";
-import Link from "next/link";
 import { navLink } from "@/lib/data";
+import { closeIt, openIt } from "@/lib/features/dropdown/dropdownSlice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import Image from "next/image";
-import { useState } from "react";
-import { ModeToggle } from "./ModeToggle";
-import NavLink from "./NavLink";
+import Link from "next/link";
 import { FaXmark } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
-import { Button } from "./ui/button";
 import DropDownMenu from "./DropDownMenu";
+import { ModeToggle } from "./ModeToggle";
+import NavLink from "./NavLink";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen } = useAppSelector((state) => state.dropdown);
+  const dispatch = useAppDispatch();
 
   return (
     <nav
@@ -20,7 +22,7 @@ const Navbar = () => {
       }`}>
       <div className='max-w-screen-2xl mx-auto flex items-center justify-between px-2 py-3 lg:py-4'>
         {/* logo */}
-        <Link href={"/"} className='' onClick={() => setIsOpen && setIsOpen(false)}>
+        <Link href={"/"} className='' onClick={() => dispatch(closeIt())}>
           <Image src='/logo.png' alt='logo' width={50} height={50} className='rounded-full object-cover' />
         </Link>
 
@@ -43,7 +45,7 @@ const Navbar = () => {
             <Button
               variant='outline'
               size='icon'
-              onClick={() => setIsOpen(false)}
+              onClick={() => dispatch(closeIt())}
               className='shadow-lg shadow-violet-400'>
               <FaXmark className='h-6 w-6' />
             </Button>
@@ -51,14 +53,14 @@ const Navbar = () => {
             <Button
               variant='outline'
               size='icon'
-              onClick={() => setIsOpen(true)}
+              onClick={() => dispatch(openIt())}
               className='shadow-lg shadow-violet-400'>
               <IoMdMenu className='h-6 w-6' />
             </Button>
           )}
         </div>
       </div>
-      {isOpen && <DropDownMenu setIsOpen={setIsOpen} />}
+      {isOpen && <DropDownMenu />}
     </nav>
   );
 };

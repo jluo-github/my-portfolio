@@ -43,6 +43,15 @@ npm install next-themes
 
 ```
 
+### redux
+
+[redux](https://redux.js.org/usage/nextjs)
+
+```
+npm i react-redux @reduxjs/toolkit
+
+```
+
 ### lucide-react
 
 ```
