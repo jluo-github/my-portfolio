@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
@@ -111,18 +111,21 @@ const About = () => {
         {" "}
         <h2 className='pb-8 text-4xl font-bold text-violet-800 dark:text-slate-200'>About Me</h2>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
-          I am a passion full-stack web developer who loves creating beautiful and functional websites. For me, design
-          is not just about looks; it is about solving problems and making user experiences easy and enjoyable. I bring
-          a commitment to great design and user-focused thinking to every project.
+          I am a passionate full-stack web developer dedicated to building beautiful, functional websites. For me,
+          design goes beyond aesthetics, it&apos;s about solving problems and creating seamless user experiences. I
+          bring a strong focus on user-centric design and problem-solving to every project I work on.
         </p>
         <p className='text-base lg:text-lg text-violet-800 dark:text-slate-300'>
           {" "}
-          I have experience with JavaScript, React, Redux, Next.js, Tailwind CSS, Java, Spring Boot, Node.js, Express,
-          MySQL, PostgreSQL, Prisma,Sequelize, HTML, CSS, Git, and GitHub. I have a strong foundation in web development
-          and I am constantly learning new technologies to improve my skills. I enjoy working with other developers to
-          create great websites and am always ready to take on new challenges to grow my abilities. I am hardworking and
-          excited about opportunities to contribute to interesting projects. I look forward to working with you to
-          create amazing websites.
+          I have hands-on experience with Next.js, TypeScript, React, Redux, Tailwind CSS, Shadcn, NextAuth, JavaScript,
+          Node.js, Express, RESTful APIs, Java, Spring Boot, Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub,
+          Docker, HTML, CSS, and Bootstrap. With a solid foundation in web development, I am always eager to learn and
+          adopt new technologies to enhance my skills.
+        </p>
+        <p className='text-base lg:text-lg text-violet-800 dark:text-slate-300'>
+          I enjoy collaborating with other developers to build great websites and am always eager to take on new
+          challenges to grow my skills. I&apos;m hardworking and excited about opportunities to contribute to
+          interesting projects. I look forward to working with you to create amazing websites.
         </p>
       </div>
     </section>

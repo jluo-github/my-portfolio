@@ -35,9 +35,9 @@ const Hero = () => {
 
           <p className='py-8 px-4 md:py-12 text-base text-violet-800 dark:text-slate-400 md:text-lg lg:text-xl'>
             As a full-stack software developer, I am dedicated to turning ideas into reality. I am passionate about
-            continuous learning and always eager to adopt new technologies to enhance my skill set. With a strong
-            commitment to teamwork and collaboration, I thrive in cooperative environments where I can contribute to and
-            learn from diverse projects.
+            continuous learning and always eager to adopt new technologies to expand my skills. With a strong commitment
+            to teamwork and collaboration, I thrive in environments where I can contribute to and learn from diverse
+            projects.
           </p>
 
           {/* buttons */}

@@ -20,7 +20,7 @@ const Navbar = () => {
       }`}>
       <div className='max-w-screen-2xl mx-auto flex items-center justify-between px-2 py-3 lg:py-4'>
         {/* logo */}
-        <Link href={"/"} className=''>
+        <Link href={"/"} className='' onClick={() => setIsOpen && setIsOpen(false)}>
           <Image src='/logo.png' alt='logo' width={50} height={50} className='rounded-full object-cover' />
         </Link>
 
@@ -48,15 +48,13 @@ const Navbar = () => {
               <FaXmark className='h-6 w-6' />
             </Button>
           ) : (
-            <>
-              <Button
-                variant='outline'
-                size='icon'
-                onClick={() => setIsOpen(true)}
-                className='shadow-lg shadow-violet-400'>
-                <IoMdMenu className='h-6 w-6' />
-              </Button>
-            </>
+            <Button
+              variant='outline'
+              size='icon'
+              onClick={() => setIsOpen(true)}
+              className='shadow-lg shadow-violet-400'>
+              <IoMdMenu className='h-6 w-6' />
+            </Button>
           )}
         </div>
       </div>
