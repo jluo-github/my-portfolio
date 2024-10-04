@@ -115,14 +115,14 @@ const About = () => {
           design goes beyond aesthetics, it&apos;s about solving problems and creating seamless user experiences. I
           bring a strong focus on user-centric design and problem-solving to every project I work on.
         </p>
-        <p className='text-base lg:text-lg text-violet-800 dark:text-slate-300'>
+        <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
           {" "}
           I have hands-on experience with Next.js, TypeScript, React, Redux, Tailwind CSS, Shadcn, NextAuth, JavaScript,
           Node.js, Express, RESTful APIs, Java, Spring Boot, Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub,
           Docker, HTML, CSS, and Bootstrap. With a solid foundation in web development, I am always eager to learn and
           adopt new technologies to enhance my skills.
         </p>
-        <p className='text-base lg:text-lg text-violet-800 dark:text-slate-300'>
+        <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
           I enjoy collaborating with other developers to build great websites and am always eager to take on new
           challenges to grow my skills. I&apos;m hardworking and excited about opportunities to contribute to
           interesting projects. I look forward to working with you to create amazing websites.
