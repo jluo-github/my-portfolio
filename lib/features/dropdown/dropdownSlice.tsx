@@ -1,6 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
-const initialState = {
+type initialStateState = {
+  isOpen: boolean;
+};
+
+const initialState: initialStateState = {
   isOpen: false,
 };
 
@@ -9,16 +13,13 @@ export const dropdownSlice = createSlice({
   initialState,
 
   reducers: {
-    closeIt: (state) => {
-      state.isOpen = false;
-    },
-    openIt: (state) => {
-      state.isOpen = true;
+    setIsOpen: (state, action: PayloadAction<boolean>) => {
+      state.isOpen = action.payload;
     },
   },
 });
 
-export const { closeIt, openIt } = dropdownSlice.actions;
+export const { setIsOpen } = dropdownSlice.actions;
 
 const dropdownReducer = dropdownSlice.reducer;
 
