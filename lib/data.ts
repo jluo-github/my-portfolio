@@ -26,8 +26,8 @@ export const projectsData: ProjectType[] = [
       "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcn-Ui, Prisma, Supabase, Clerk, Stripe",
     image: "/purplecat-next-store.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jluo-github/purplecat-next-store",
-    previewUrl: "https://purplecat-next-store.vercel.app",
+    gitUrl: "https://github.com/jluo-github/soft-sweet-home",
+    previewUrl: "https://soft-sweet-home.vercel.app",
   },
 
   {
@@ -37,8 +37,8 @@ export const projectsData: ProjectType[] = [
       "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
     image: "/property-rental-app.jpg",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/jluo-github/purplecat-rental",
-    previewUrl: "https://purplecat-next-rental.vercel.app",
+    gitUrl: "https://github.com/jluo-github/property-rental-app",
+    previewUrl: "https://purplecat-property-rental.vercel.app",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const projectsData: ProjectType[] = [
       "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Supabase, Zod",
     image: "/purplecat-stayzen.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jluo-github/purplecat-next-stayzen",
+    gitUrl: "https://github.com/jluo-github/purplecat-stayzen",
     previewUrl: "https://purplecat-stayzen.vercel.app",
   },
   {
@@ -66,7 +66,7 @@ export const projectsData: ProjectType[] = [
     description: "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Clerk",
     image: "/purplecat-gpt-app.jpg",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/jluo-github/pruplecat-gpt-app",
+    gitUrl: "https://github.com/jluo-github/purplecat-gpt-app",
     previewUrl: "https://purplecat-gpt-app.vercel.app",
   },
 
@@ -105,8 +105,8 @@ export const projectsData: ProjectType[] = [
   //   description: "Skills and Technologies: Next.js, React, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
   //   image: "/property-rental-app.jpg",
   //   tag: ["All", "Web", "Mobile"],
-  //   gitUrl: "https://github.com/jluo-github/property-rental-app?tab=readme-ov-file",
-  //   previewUrl: "https://property-rental-app-eta.vercel.app",
+  //   gitUrl: "https://github.com/jluo-github/rental-app",
+  //   previewUrl: "https://rental-app-eta.vercel.app",
   // },
 ];
 
