@@ -23,7 +23,7 @@ const initState: StateType = {
 
 export function ContactForm() {
   return (
-    <div className='max-w-md w-full mx-auto rounded border-[1px] border-violet-300/[0.2] md:rounded-2xl p-4 md:p-8 shadow-xl dark:shadow-xl shadow-violet-300 dark:shadow-slate-400 bg-violet-50 dark:bg-slate-900 '>
+    <div className='max-w-md w-[90%] mx-auto rounded border-[1px] border-violet-300/[0.2] md:rounded-2xl p-4 md:p-8   shadow-xl dark:shadow-xl shadow-violet-300 dark:shadow-slate-400 bg-violet-50 dark:bg-slate-900 '>
       {/* form */}
       <form
         action={async (formData) => {

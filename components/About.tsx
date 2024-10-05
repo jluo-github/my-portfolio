@@ -36,9 +36,10 @@ const skillsData = [
       "CompTIA A+",
       "AWS Certified Cloud Practitioner",
       "ITIL® 4 Foundation - IT Service Management",
-      " Software Development",
+      " Software Development ",
       "Full Stack Web Development",
-      "Cybersecurity | System and Network Administration",
+      " Cybersecurity ",
+      "System and Network Administration",
       "Business Software Specialist",
     ],
   },
@@ -55,11 +56,11 @@ const About = () => {
 
   return (
     <section id='about' className='py-24'>
-      <div className='flex flex-col items-center gap-16 xl:flex-row xl:justify-center  text-center xl:text-left '>
-        <Card className='xl:min-h-[500px]  border-none shadow-none  bg-transparent'>
+      <div className='flex flex-col items-center gap-16 xl:flex-row xl:justify-center xl:gap-4 text-center xl:text-left '>
+        <Card className='xl:min-h-[500px] xl:w-1/2 border-none shadow-none  bg-transparent'>
           {/* heading */}
-          <div className='flex w-full mx-auto lg:w-[85%] xl:w-full   xl:max-w-[620px] flex-col justify-start py-8 px-2'>
-            <h2 className='text-4xl font-bold leading-normal text-violet-900 dark:text-white md:text-5xl lg:text-6xl md:leading-relaxed'>
+          <div className='flex w-full mx-auto lg:w-[85%] xl:w-full xl:max-w-[620px] flex-col justify-start py-8 px-2'>
+            <h2 className='text-3xl sm:text-4xl font-bold leading-normal text-violet-900 dark:text-white md:text-5xl lg:text-6xl md:leading-relaxed'>
               Building <span className='text-violet-500 dark:text-violet-400'>skills</span> and Pursuing{" "}
               <span className='text-violet-500 dark:text-violet-400'> Continuous </span>
               Growth{" "}
@@ -68,9 +69,9 @@ const About = () => {
         </Card>
 
         {/* skills */}
-        <Card className='min-h-[500px] border-none shadow-none  bg-transparent'>
+        <Card className='min-h-[500px] flex flex-col xl:w-1/2 items-center justify-start border-none shadow-none  bg-transparent'>
           {/* buttons */}
-          <div className='flex items-center justify-center gap-8 py-4 xl:gap-16'>
+          <div className='flex justify-center sm:gap-6 md:gap-8 py-4 xl:gap-16'>
             {skillsData.map((item, index) => (
               <Button
                 key={index}
@@ -83,20 +84,20 @@ const About = () => {
                   item.id === skillId
                     ? "bg-violet-100 dark:bg-slate-800  shadow-violet-400  "
                     : "bg-violet-50  dark:bg-slate-950  dark:shadow-[0_2px_20px_-1px_rgba(0,0,0,0.1)] shadow-violet-300  "
-                }text-violet-800 text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:shadow-none hover:dark:shadow-none`}>
+                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:shadow-none hover:dark:shadow-none`}>
                 {item.title}
               </Button>
             ))}
           </div>
 
           {/* content */}
-          <div className='flex flex-col items-center gap-4 p-12 xl:items-start xl:gap-8'>
+          <div className='flex flex-col gap-2 p-12 xl:py-12 xl:p-4 xl:gap-3'>
             {skillsData
               .filter((item) => item.id === skillId)
               .map((skill, index) => (
-                <div className='flex flex-col gap-2 ' key={index}>
+                <div key={index}>
                   {skill.content.map((content, index) => (
-                    <div className='text-xl font-semibold text-violet-800 dark:text-slate-400' key={index}>
+                    <div className='text-base sm:text-xl font-semibold text-violet-800 dark:text-slate-400' key={index}>
                       {content}
                     </div>
                   ))}
@@ -107,7 +108,7 @@ const About = () => {
       </div>
 
       {/* about */}
-      <div className='py-20 px-10 mx-auto'>
+      <div className='py-20 px-10 mx-auto max-w-6xl'>
         {" "}
         <h2 className='pb-8 text-4xl font-bold text-violet-800 dark:text-slate-200'>About Me</h2>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>

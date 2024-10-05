@@ -9,7 +9,7 @@ import { GrProjects } from "react-icons/gr";
 
 const Hero = () => {
   return (
-    <section className='px-4 sm:px-6 lg:px-8 mx-auto'>
+    <section className='pt-20 px-4 sm:px-6 lg:px-8 mx-auto'>
       {" "}
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-y-12 md:gap-x-4 lg:gap-x-8'>
         {/* text */}
@@ -17,9 +17,9 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className='col-span-2 my-4 w-full place-self-center justify-self-start text-center sm:text-left'>
+          className='col-span-2  my-4 w-full place-self-center justify-self-start text-center sm:text-left'>
           {/* heading */}
-          <h1 className='mb-2 text-4xl font-extrabold text-violet-800 dark:text-white  sm:text-3xl lg:text-5xl xl:text-7xl lg:leading-normal'>
+          <h1 className='mb-2 text-3xl md:text-4xl font-extrabold text-violet-800 dark:text-white  sm:text-3xl lg:text-5xl xl:text-7xl lg:leading-normal'>
             <span className='bg-gradient-to-r from-violet-600 to-pink-500 dark:from-violet-500 dark:to-pink-300 bg-clip-text text-transparent'>
               Hello, I&apos;m{" "}
             </span>

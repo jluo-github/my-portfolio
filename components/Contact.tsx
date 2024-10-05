@@ -9,14 +9,14 @@ import { ContactForm } from "./forms/ContactForm";
 const Contact = () => {
   return (
     <section id='contact' className='relative mx-auto '>
-      <div className='-translate-y-8 absolute top-3/4 z-0 h-80 w-80 -translate-x-8 transform rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-violet-900 to-transparent blur-lg' />
+      <div className='-translate-y-4 absolute top-3/4 z-0 h-80 w-80 -translate-x-12 transform rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-violet-900 from-violet-400 to-transparent   blur-3xl dark:blur-lg' />
 
       {/* image */}
-      <div className='w-[200px] absolute -left-4 top-3/4 z-0    dark:mix-blend-color-dodge dark:animate-pulse duration-75 xl:w-[300px]'>
+      <div className='w-[200px] absolute translate-y-12 translate-x-4  top-3/4 z-0    dark:mix-blend-color-dodge  animate-pulse duration-10 dark:duration-100 xl:w-[300px]'>
         <Image src='/about.png' width={200} height={200} className='h-full w-full rounded-full' alt='logo' />
       </div>
 
-      <div className=' flex flex-col sm:flex-row items-center sm:items-start sm:justify-center my-20 gap-8 py-8'>
+      <div className=' flex flex-col sm:flex-row items-center sm:items-start sm:justify-center my-20 gap-8 py-8 '>
         {/* icons */}
         <div className='z-3 sm:w-1/3 mx-auto px-8 sm:px-4'>
           <div>

@@ -17,12 +17,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-10 mx-auto shadow-lg shadow-violet-500/[0.3]  dark:shadow-violet-400/[0.4]  ${
+      className={`fixed top-0 left-0 right-0 z-10  mx-auto shadow-lg shadow-violet-500/[0.3]  dark:shadow-violet-400/[0.4]  ${
         isOpen ? "bg-violet-100 dark:bg-slate-900" : "bg-violet-100/[0.8] dark:bg-slate-900/[0.8]"
       }`}>
-      <div className='max-w-screen-2xl mx-auto flex items-center justify-between px-2 py-3 lg:py-4'>
+      <div className=' flex items-center justify-between px-2 py-3 lg:py-4'>
         {/* logo */}
-        <Link href={"/"} className='' onClick={() => dispatch(setIsOpen(false))}>
+        <Link
+          href={"/"}
+          className='hover:scale-[1.15] transition-all active:scale-105'
+          onClick={() => dispatch(setIsOpen(false))}>
           <Image src='/logo.png' alt='logo' width={50} height={50} className='rounded-full object-cover' />
         </Link>
 

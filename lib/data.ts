@@ -3,7 +3,7 @@ export type NavLink = {
   href: string;
 };
 
-export const navLink: NavLink[] = [ 
+export const navLink: NavLink[] = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
@@ -23,7 +23,7 @@ export const projectsData: ProjectType[] = [
     id: 1,
     title: "Soft & Sweet Home",
     description:
-      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcn-Ui, Prisma, Supabase, Clerk, Stripe",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcn-Ui, Prisma, Zod, Supabase, Clerk, Stripe, GitHub Actions",
     image: "/purplecat-next-store.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/soft-sweet-home",
@@ -34,7 +34,7 @@ export const projectsData: ProjectType[] = [
     id: 2,
     title: "Property Rental App",
     description:
-      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, MongoDB, Next-auth, Cloudinary, React-share",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, MongoDB/Mongoose, Next-auth, Cloudinary",
     image: "/property-rental-app.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jluo-github/property-rental-app",
@@ -44,26 +44,18 @@ export const projectsData: ProjectType[] = [
     id: 3,
     title: "StayZen",
     description:
-      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Supabase, Zod",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Zod, Supabase, Zustand, Stripe ",
     image: "/purplecat-stayzen.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/purplecat-stayzen",
     previewUrl: "https://purplecat-stayzen.vercel.app",
   },
-  {
-    id: 4,
-    title: "TV Show App",
-    description: "Skills and Technologies: React, Tailwind CSS, themoviedb API",
-    image: "/TV-show-app.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/jluo-github/tv-show-app",
-    previewUrl: "https://tv-show-app-self.vercel.app",
-  },
 
   {
     id: 5,
     title: "GPT App",
-    description: "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Clerk",
+    description:
+      "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Tanstack/React-Query, Clerk",
     image: "/purplecat-gpt-app.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jluo-github/purplecat-gpt-app",
@@ -73,7 +65,8 @@ export const projectsData: ProjectType[] = [
   {
     id: 6,
     title: "Tasks App",
-    description: "Skills and Technologies: React, Prisma, Tailwind CSS, React-Query, Clerk, Shadcn-UI, Recharts",
+    description:
+      "Skills and Technologies: Next.js, React, TypeScript, Prisma, Tailwind CSS, React-Query, Clerk, Shadcn-UI, Recharts",
     image: "/purplecat-tasks.jpg",
     tag: ["All"],
     gitUrl: "https://github.com/jluo-github/purplecat-tasks",
@@ -83,7 +76,7 @@ export const projectsData: ProjectType[] = [
   {
     id: 7,
     title: "PurpleCat Bar",
-    description: "Skills and Technologies: React, Vite, React-Query, react-toastify",
+    description: "Skills and Technologies: React, Styled-components, React-Query, axios",
     image: "/purplecat-bar.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/purplecat-bar",
@@ -91,9 +84,20 @@ export const projectsData: ProjectType[] = [
   },
 
   {
+    id: 4,
+    title: "TV Show App",
+    description:
+      "                                                       Skills and Technologies: React, Tailwind CSS, themoviedb API                                                          ",
+    image: "/TV-show-app.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/jluo-github/tv-show-app",
+    previewUrl: "https://tv-show-app-self.vercel.app",
+  },
+
+  {
     id: 8,
     title: "PCC Summer Project",
-    description: "Skills and Technologies: React, Node.js, Express, MySQL, Sequelize, Bootstrap",
+    description: "Skills and Technologies: React, Node.js, Express, MySQL, Sequelize, Bootstrap, sass",
     image: "/PCC-Summer-Project.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jluo-github/PCCsummer-project-client",

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
+import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,11 +39,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`bg-violet-50 text-black dark:bg-slate-900 dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={` flex flex-col bg-violet-50 text-black dark:bg-slate-900 dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <StoreProvider>
           <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
-            {" "}
-            <main className=''> {children}</main>
+    
+            <main className=' flex w-full max-w-screen-2xl '> {children}</main>
           </ThemeProvider>
         </StoreProvider>
         <Toaster position='bottom-center' />
