@@ -84,7 +84,7 @@ const About = () => {
                   item.id === skillId
                     ? "bg-violet-100 dark:bg-slate-800  shadow-violet-400  "
                     : "bg-violet-50  dark:bg-slate-950  dark:shadow-[0_2px_20px_-1px_rgba(0,0,0,0.1)] shadow-violet-300  "
-                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:shadow-none hover:dark:shadow-none`}>
+                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400  hover:scale-105 active:scale-90 transition-all`}>
                 {item.title}
               </Button>
             ))}

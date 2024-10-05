@@ -56,7 +56,7 @@ const Projects = () => {
                       asChild
                       size='icon'
                       variant='link'
-                      className='dark:shadow-lg shadow-xl hover:scale-125 transition-all shadow-violet-400 dark:text-violet-500'>
+                      className='dark:shadow-lg shadow-xl hover:scale-125 active:scale-90 transition-all shadow-violet-400 dark:text-violet-500'>
                       <Link href={project.gitUrl} target='_blank' className='h-10 my-2'>
                         <FaGithub className='w-10 h-10' />
                       </Link>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <Button
                       size='icon'
                       variant='link'
-                      className='dark:shadow-lg shadow-xl hover:scale-125 transition-all shadow-violet-400 dark:text-violet-500'>
+                      className='dark:shadow-lg shadow-xl hover:scale-125 active:scale-90 transition-all shadow-violet-400 dark:text-violet-500'>
                       <Link href={project.previewUrl} target='_blank'>
                         <CgWebsite className='h-10 w-10  text-muted-foreground' />
                       </Link>

@@ -34,11 +34,11 @@ const Contact = () => {
 
           <div className='socials flex flex-row gap-8 '>
             <Link href='https://github.com/jluo-github' target='_blank' className='bg-transparent'>
-              <SiGithub className='w-10 h-10 hover:scale-125 transition-all shadow-xl shadow-violet-400 bg-transparent' />
+              <SiGithub className='w-10 h-10 hover:scale-125 active:scale-90 transition-all shadow-xl shadow-violet-400 bg-transparent' />
             </Link>
 
             <Link href='https://linkedin.com/in/jluo23' target='_blank' className='bg-transparent'>
-              <FaLinkedin className='bg-transparent w-10 h-10 hover:scale-125 transition-all shadow-xl shadow-violet-700 dark:shadow-violet-400' />
+              <FaLinkedin className='bg-transparent w-10 h-10 hover:scale-125 active:scale-90 transition-all shadow-xl shadow-violet-700 dark:shadow-violet-400' />
             </Link>
           </div>
         </div>

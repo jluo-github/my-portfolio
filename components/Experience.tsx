@@ -32,7 +32,7 @@ const experienceData: ExperienceData[] = [
 const Experience = () => {
   return (
     <div className='py-8 mx-auto grid grid-cols-1 px-1 lg:px-20 w-full lg:w-3/4'>
-      <Button className='w-full bg-violet-50 dark:bg-slate-900 border-none shadow-xl shadow-violet-400'>
+      <Button className='w-full cursor-auto bg-violet-50 dark:bg-slate-900 border-none shadow-xl shadow-violet-400'>
         <div className='flex items-center gap-10 sm:gap-20 md:gap-28 justify-between md:px-20 py-8'>
           {experienceData.map((item, index) => (
             <div key={index} className='flex flex-col gap-2  '>

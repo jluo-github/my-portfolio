@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* logo */}
         <Link
           href={"/"}
-          className='hover:scale-[1.15] transition-all active:scale-105'
+          className='hover:scale-110 active:scale-90 transition-all'
           onClick={() => dispatch(setIsOpen(false))}>
           <Image src='/logo.png' alt='logo' width={50} height={50} className='rounded-full object-cover' />
         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
               variant='outline'
               size='icon'
               onClick={() => dispatch(() => dispatch(setIsOpen(false)))}
-              className='shadow-lg shadow-violet-400'>
+              className='shadow-lg shadow-violet-400 hover:scale-105 active:scale-90 transition-all'>
               <FaXmark className='h-6 w-6' />
             </Button>
           ) : (
@@ -57,7 +57,7 @@ const Navbar = () => {
               variant='outline'
               size='icon'
               onClick={() => dispatch(() => dispatch(setIsOpen(true)))}
-              className='shadow-lg shadow-violet-400'>
+              className='shadow-lg shadow-violet-400 hover:scale-105 active:scale-90 transition-all'>
               <IoMdMenu className='h-6 w-6' />
             </Button>
           )}

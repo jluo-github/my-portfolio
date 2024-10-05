@@ -41,9 +41,9 @@ const Hero = () => {
           </p>
 
           {/* buttons */}
-          <div className='flex gap-8 flex-col m-12 sm:flex-row  sm:mx-0'>
+          <div className='flex gap-8 flex-col m-12 sm:flex-row  sm:mx-0 '>
             {/* email BorderMagic button */}
-            <Link href='/#contact' className='group hover:scale-105'>
+            <Link href='/#contact' className='group hover:scale-105 active:scale-90 transition-all'>
               <BorderMagic
                 title='Contact Me'
                 otherClasses='text-lg sm:text-base '
@@ -55,7 +55,7 @@ const Hero = () => {
             </Link>
 
             {/* projects BorderMagic button */}
-            <Link href='/#projects' className='group hover:scale-105'>
+            <Link href='/#projects' className='group hover:scale-105 active:scale-90 transition-all'>
               <BorderMagic
                 otherClasses='text-lg'
                 title='Projects'

@@ -51,10 +51,10 @@ export function ContactForm() {
 
         {/* submit button */}
 
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center group hover:scale-105 active:scale-90 transition-all '>
           <BorderMagic
             title='Contact Me'
-            otherClasses='text-lg sm:text-base w-full group hover:scale-105 flex mx-auto items-center'
+            otherClasses='text-lg sm:text-base w-full flex mx-auto items-center'
             icon={
               <FiSend className='ml-4 sm:ml-1 w-6 h-6 group-hover:translate-x-2 group-hover:-translate-y-1 transition ' />
             }

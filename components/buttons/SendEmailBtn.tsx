@@ -1,10 +1,9 @@
-import { FaLocationArrow } from "react-icons/fa6";
-import BorderMagic from "../ui/border-magic";
 import { MdOutlineAttachEmail } from "react-icons/md";
+import BorderMagic from "../ui/border-magic";
 
 const SendEmailBtn = () => {
   return (
-    <div className='mx-auto group hover:scale-105'>
+    <div className='mx-auto group hover:scale-105 active:scale-90 transition-all'>
       <a href='mailto:jin.purplecat@gmail.com' className=''>
         <BorderMagic
           title='Send Email'
