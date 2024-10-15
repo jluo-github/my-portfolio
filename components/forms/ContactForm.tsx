@@ -4,8 +4,8 @@ import { MotionInput as Input } from "@/components/MotionInput";
 import { MotionLabel as Label } from "@/components/MotionLabel";
 import { sendEmail } from "@/lib/actions";
 import { cn } from "@/lib/utils";
-import React from "react";
-import toast from "react-hot-toast";
+import React, { useRef } from "react";
+import { toast } from "sonner";
 import { MotionTextarea } from "../ui/motion-textarea";
 
 import { FiSend } from "react-icons/fi";
@@ -22,18 +22,22 @@ const initState: StateType = {
 };
 
 export function ContactForm() {
+  const formRef = useRef<HTMLFormElement>(null);
+
   return (
     <div className='max-w-md w-[90%] mx-auto rounded border-[1px] border-violet-300/[0.2] md:rounded-2xl p-4 md:p-8   shadow-xl dark:shadow-xl shadow-violet-300 dark:shadow-slate-400 bg-violet-50 dark:bg-slate-900 '>
       {/* form */}
       <form
+        ref={formRef}
         action={async (formData) => {
           const response = await sendEmail(formData);
+          formRef.current?.reset();
           if (!response) {
             toast.error("An error occurred");
             return;
           }
           if (response.message) {
-            toast(response.message);
+            toast.success(response.message);
           } else {
             toast.error("An error occurred");
           }
@@ -41,7 +45,12 @@ export function ContactForm() {
         {/* email */}
         <LabelInputContainer className='mb-4'>
           <Label htmlFor='senderEmail'>Email</Label>
-          <Input id='senderEmail' placeholder='Your Email' type='email' name='senderEmail' />
+          <Input
+            id='senderEmail'
+            placeholder='Your Email'
+            type='email'
+            name='senderEmail'
+          />
         </LabelInputContainer>
         {/* message */}
         <LabelInputContainer className='mb-12'>
@@ -75,6 +84,14 @@ const BottomGradient = () => {
   );
 };
 
-const LabelInputContainer = ({ children, className }: { children: React.ReactNode; className?: string }) => {
-  return <div className={cn("flex flex-col space-y-2 w-full", className)}>{children}</div>;
+const LabelInputContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>{children}</div>
+  );
 };

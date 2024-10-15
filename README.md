@@ -18,7 +18,8 @@ Please visit [My portfolio](https://purplecat-portfolio.vercel.app/) for more de
 ```
 npx shadcn@latest init
 
-npx shadcn@latest add card button dropdown-menu input label scroll-area separator toast skeleton
+npx shadcn@latest add card button dropdown-menu input label scroll-area separator toast sonner skeleton
+npx shadcn@latest add sonner
 
 ```
 
