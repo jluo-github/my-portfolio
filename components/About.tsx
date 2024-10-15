@@ -10,12 +10,12 @@ const skillsData = [
     content: [
       "React | Next.js | TypeScript",
       "Tailwind CSS | Shadcn | NextAuth",
-      "JavaScript | HTML| CSS",
+      "JavaScript | HTML | CSS",
       "Node.js | Express | RESTful API",
       "Java | Spring Boot | Python",
       "MySQL | PostgreSQL | MongoDB",
       "Git | GitHub | Docker",
-      "Prisma | Redux | Bootstrap",
+      "Prisma | Bootstrap | Redux",
     ],
   },
   {
@@ -61,7 +61,9 @@ const About = () => {
           {/* heading */}
           <div className='flex w-full mx-auto lg:w-[85%] xl:w-full xl:max-w-[620px] flex-col justify-start py-8 px-2'>
             <h2 className='text-3xl sm:text-4xl font-bold leading-normal text-violet-900 dark:text-white md:text-5xl lg:text-6xl md:leading-relaxed'>
-              Building <span className='text-violet-500 dark:text-violet-400'>skills</span> and Pursuing{" "}
+              Building{" "}
+              <span className='text-violet-500 dark:text-violet-400'>skills</span> and
+              Pursuing{" "}
               <span className='text-violet-500 dark:text-violet-400'> Continuous </span>
               Growth{" "}
             </h2>
@@ -97,7 +99,9 @@ const About = () => {
               .map((skill, index) => (
                 <div key={index}>
                   {skill.content.map((content, index) => (
-                    <div className='text-base sm:text-xl font-semibold text-violet-800 dark:text-slate-400' key={index}>
+                    <div
+                      className='text-base sm:text-xl font-semibold text-violet-800 dark:text-slate-400'
+                      key={index}>
                       {content}
                     </div>
                   ))}
@@ -110,23 +114,28 @@ const About = () => {
       {/* about */}
       <div className='py-20 px-10 mx-auto max-w-6xl'>
         {" "}
-        <h2 className='pb-8 text-4xl font-bold text-violet-800 dark:text-slate-200'>About Me</h2>
+        <h2 className='pb-8 text-4xl font-bold text-violet-800 dark:text-slate-200'>
+          About Me
+        </h2>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
-          I am a passionate full-stack web developer dedicated to building beautiful, functional websites. For me,
-          design goes beyond aesthetics, it&apos;s about solving problems and creating seamless user experiences. I
-          bring a strong focus on user-centric design and problem-solving to every project I work on.
+          I am a passionate full-stack web developer dedicated to building beautiful,
+          functional websites. For me, design goes beyond aesthetics, it&apos;s about
+          solving problems and creating seamless user experiences. I bring a strong focus
+          on user-centric design and problem-solving to every project I work on.
         </p>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
           {" "}
-          I have hands-on experience with Next.js, TypeScript, React, Redux, Tailwind CSS, Shadcn, NextAuth, JavaScript,
-          Node.js, Express, RESTful APIs, Java, Spring Boot, Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub,
-          Docker, HTML, CSS, and Bootstrap. With a solid foundation in web development, I am always eager to learn and
-          adopt new technologies to enhance my skills.
+          I have hands-on experience with Next.js, TypeScript, React, Redux, Tailwind CSS,
+          Shadcn, NextAuth, JavaScript, Node.js, Express, RESTful APIs, Java, Spring Boot,
+          Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub, Docker, HTML, CSS, and
+          Bootstrap. With a solid foundation in web development, I am always eager to
+          learn and adopt new technologies to enhance my skills.
         </p>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
-          I enjoy collaborating with other developers to build great websites and am always eager to take on new
-          challenges to grow my skills. I&apos;m hardworking and excited about opportunities to contribute to
-          interesting projects. I look forward to working with you to create amazing websites.
+          I enjoy collaborating with other developers to build great websites and am
+          always eager to take on new challenges to grow my skills. I&apos;m hardworking
+          and excited about opportunities to contribute to interesting projects. I look
+          forward to working with you to create amazing websites.
         </p>
       </div>
     </section>

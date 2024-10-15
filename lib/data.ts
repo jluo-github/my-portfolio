@@ -44,11 +44,22 @@ export const projectsData: ProjectType[] = [
     id: 3,
     title: "StayZen",
     description:
-      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui Clerk, Prisma, Zod, Supabase, Zustand, Stripe ",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui, Clerk, Prisma, Zod, Supabase, Zustand, Stripe ",
     image: "/purplecat-stayzen.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/purplecat-stayzen",
     previewUrl: "https://purplecat-stayzen.vercel.app",
+  },
+
+  {
+    id: 4,
+    title: "InvoManager App",
+    description:
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, Shadcd-Ui, Drizzle, Clerk, Stripe, Resend",
+    image: "/invomanager-app.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/jluo-github/invomanager",
+    previewUrl: "https://invomanager.vercel.app",
   },
 
   {
@@ -73,21 +84,20 @@ export const projectsData: ProjectType[] = [
     previewUrl: "https://purple-cat-task.vercel.app",
   },
 
-  {
-    id: 7,
-    title: "PurpleCat Bar",
-    description: "Skills and Technologies: React, Styled-components, React-Query, axios",
-    image: "/purplecat-bar.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/jluo-github/purplecat-bar",
-    previewUrl: "https://vite-mixer.netlify.app",
-  },
+  // {
+  //   id: 9,
+  //   title: "PurpleCat Bar",
+  //   description: "Skills and Technologies: React, Styled-components, React-Query, axios",
+  //   image: "/purplecat-bar.jpg",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "https://github.com/jluo-github/purplecat-bar",
+  //   previewUrl: "https://vite-mixer.netlify.app",
+  // },
 
   {
-    id: 4,
+    id: 7,
     title: "TV Show App",
-    description:
-      "                                                       Skills and Technologies: React, Tailwind CSS, themoviedb API                                                          ",
+    description: "Skills and Technologies: React, Tailwind CSS, themoviedb API",
     image: "/TV-show-app.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jluo-github/tv-show-app",
@@ -97,7 +107,8 @@ export const projectsData: ProjectType[] = [
   {
     id: 8,
     title: "PCC Summer Project",
-    description: "Skills and Technologies: React, Node.js, Express, MySQL, Sequelize, Bootstrap, sass",
+    description:
+      "Skills and Technologies: React, Node.js, Express, MySQL, Sequelize, Bootstrap, sass",
     image: "/PCC-Summer-Project.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jluo-github/PCCsummer-project-client",

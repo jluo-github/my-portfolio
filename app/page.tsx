@@ -8,7 +8,7 @@ import Projects from "@/components/Projects";
 
 const HomePage = () => {
   return (
-    <main className=' '>
+    <main className=''>
       <Navbar />
       <div className='mx-auto mt-30 px-4 sm:px-6 md:px-8 gap-8 sm:gap-12 md:gap-20 flex flex-col w-full'>
         <div className='w-full h-[10px]'></div>

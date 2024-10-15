@@ -47,7 +47,7 @@ export default function RootLayout({
             defaultTheme='dark'
             enableSystem
             disableTransitionOnChange>
-            <main className=' flex w-full max-w-screen-2xl '> {children}</main>
+            <main className=' flex w-full max-w-screen-2xl mx-auto'> {children}</main>
           </ThemeProvider>
         </StoreProvider>
         <Toaster position='bottom-right' theme='dark' />
