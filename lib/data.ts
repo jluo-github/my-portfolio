@@ -66,8 +66,8 @@ export const projectsData: ProjectType[] = [
     id: 5,
     title: "GPT App",
     description:
-      "Skills and Technologies: Next.js, React, Tailwind CSS, DaisyUI, OpenAI, Prisma, Tanstack/React-Query, Clerk",
-    image: "/purplecat-gpt-app.jpg",
+      "Skills and Technologies: Next.js, React, TypeScript, Tailwind CSS, DaisyUI, OpenAI, Prisma, MongoDB, Tanstack/React-Query, Clerk",
+    image: "/GPTcat-app.jpg",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jluo-github/purplecat-gpt-app",
     previewUrl: "https://purplecat-gpt-app.vercel.app",
