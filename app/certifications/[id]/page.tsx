@@ -1,10 +1,4 @@
-import {
-  CardHeader,
-  CardTitle,
-  Card,
-  CardContent,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { certs, type CertType } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +26,6 @@ const CertDetailPage = ({ params }: { params: { id: string } }) => {
         className='text-xl hover:font-bold text-violet-800 dark:text-violet-200 md:mb-20 mb-12'>
         Back to Certifications
       </Link>
-      
       <Card className='bg-violet-100 text-violet-800 dark:bg-slate-900 dark:text-violet-200 shadow-lg shadow-violet-300 dark:shadow-slate-400 border-none flex flex-col gap-16 justify-center my-8'>
         <CardHeader>
           <CardTitle className='text-center my-8'>{certDetail.title}</CardTitle>{" "}
