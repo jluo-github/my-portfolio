@@ -19,13 +19,17 @@ const Projects = () => {
   };
 
   return (
-    <section id='projects' className='py-20 '>
-      <div className=' '>
-        <h2 className='pb-8 text-center text-4xl font-bold text-violet-800 dark:text-slate-200'>Projects</h2>
+    <section id='projects' className='py-28 '>
+      <div>
+        <h2 className='pb-8 text-center text-4xl font-bold text-violet-800 dark:text-slate-200'>
+          Projects
+        </h2>
       </div>
 
       <div className='mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-12 p-6 md:flex-row md:p-8'>
-        <div ref={ref} className='grid grid-cols-1 w-full gap-12 md:gap-16 md:grid-cols-2 xl:grid-cols-3'>
+        <div
+          ref={ref}
+          className='grid grid-cols-1 w-full gap-12 md:gap-16 md:grid-cols-2 xl:grid-cols-3'>
           {/* projects card*/}
           {projectsData.map((project, index) => (
             <motion.div
@@ -73,7 +77,9 @@ const Projects = () => {
                   </div>
                   <div className=' '>
                     {" "}
-                    <CardDescription className='text-lg py-4'>{project.description}</CardDescription>
+                    <CardDescription className='text-lg py-4'>
+                      {project.description}
+                    </CardDescription>
                   </div>
                 </CardContent>
               </Card>

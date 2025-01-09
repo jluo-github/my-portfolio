@@ -95,17 +95,13 @@ npx @sentry/wizard@latest -i nextjs --saas --org purple-cat --project my-portfol
 
 ```
 
-### @testing-library/react
+### jest
 
 ```
+ npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/dom @testing-library/jest-dom ts-node @testing-library/user-event ts-jest jest-fixed-jsdom @types/jest 
 
-npm i @testing-library/react
+npm install --save-dev @types/testing-library__jest-dom
+npm init jest@latest
 
-```
-
-### vitest
-
-```
-npm install vitest @testing-library/react @testing-library/jest-dom --save-dev
 
 ```

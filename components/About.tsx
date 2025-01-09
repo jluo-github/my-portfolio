@@ -2,57 +2,10 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-
-const skillsData = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: [
-      "React | Next.js | TypeScript",
-      "Tailwind CSS | Shadcn | NextAuth",
-      "JavaScript | HTML | CSS",
-      "Node.js | Express | RESTful API",
-      "Java | Spring Boot | Python",
-      "MySQL | PostgreSQL | MongoDB",
-      "Git | GitHub | Docker",
-      "Prisma | Bootstrap | Redux",
-    ],
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: [
-      "B.S. Software Engineering",
-      "- Western Governors University ",
-      "Computer Information Systems",
-      " - Pasadena City College  ",
-    ],
-  },
-
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: [
-      "CompTIA A+",
-      "AWS Certified Cloud Practitioner",
-      "ITIL® 4 Foundation - IT Service Management",
-      " Software Development ",
-      "Full Stack Web Development",
-      " Cybersecurity ",
-      "System and Network Administration",
-      "Business Software Specialist",
-    ],
-  },
-];
-
-type Skills = {
-  title: string;
-  id: string;
-  content: string[];
-};
+import { skillsData, type SkillsData } from "@/lib/data";
 
 const About = () => {
-  const [skillId, setSkillId] = useState<Skills["id"]>(skillsData[0].id);
+  const [skillId, setSkillId] = useState<SkillsData["id"]>(skillsData[0].id);
 
   return (
     <section id='about' className='py-24'>
@@ -71,7 +24,7 @@ const About = () => {
         </Card>
 
         {/* skills */}
-        <Card className='min-h-[500px] flex flex-col xl:w-1/2 items-center justify-start border-none shadow-none  bg-transparent'>
+        <Card className='min-h-[500px] flex flex-col xl:w-1/2 items-center justify-start border-none shadow-none bg-transparent'>
           {/* buttons */}
           <div className='flex justify-center sm:gap-6 md:gap-8 py-4 xl:gap-16'>
             {skillsData.map((item, index) => (
@@ -84,9 +37,9 @@ const About = () => {
                 size='lg'
                 className={`${
                   item.id === skillId
-                    ? "bg-violet-100 dark:bg-slate-800  shadow-violet-400  "
-                    : "bg-violet-50  dark:bg-slate-950  dark:shadow-[0_2px_20px_-1px_rgba(0,0,0,0.1)] shadow-violet-300  "
-                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400  hover:scale-105 active:scale-90 transition-all`}>
+                    ? "bg-violet-100 dark:bg-slate-900 shadow-violet-400"
+                    : "bg-violet-50  dark:bg-slate-950  dark:shadow-[0_2px_20px_-1px_rgba(0,0,0,0.1)] shadow-violet-300"
+                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:scale-105 active:scale-90 transition-all`}>
                 {item.title}
               </Button>
             ))}
@@ -100,7 +53,7 @@ const About = () => {
                 <div key={index}>
                   {skill.content.map((content, index) => (
                     <div
-                      className='text-base sm:text-xl font-semibold text-violet-800 dark:text-slate-400'
+                      className='text-base leading-6 sm:leading-8 sm:text-xl font-semibold text-violet-800 dark:text-slate-400'
                       key={index}>
                       {content}
                     </div>
@@ -113,7 +66,6 @@ const About = () => {
 
       {/* about */}
       <div className='py-20 px-10 mx-auto max-w-6xl'>
-        {" "}
         <h2 className='pb-8 text-4xl font-bold text-violet-800 dark:text-slate-200'>
           About Me
         </h2>
@@ -124,12 +76,12 @@ const About = () => {
           on user-centric design and problem-solving to every project I work on.
         </p>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
-          {" "}
           I have hands-on experience with Next.js, TypeScript, React, Redux, Tailwind CSS,
-          Shadcn, NextAuth, JavaScript, Node.js, Express, RESTful APIs, Java, Spring Boot,
-          Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub, Docker, HTML, CSS, and
-          Bootstrap. With a solid foundation in web development, I am always eager to
-          learn and adopt new technologies to enhance my skills.
+          Shadcn, NextAuth, JavaScript, Node.js, Express, RESTful APIs, GraphQL, Apollo,
+          Java, Spring Boot, Python, MySQL, PostgreSQL, MongoDB, Prisma, Git, GitHub,
+          Docker, Vitest, Jest, HTML, CSS, and Bootstrap. With a solid foundation in web
+          development, I am always eager to learn and adopt new technologies to enhance my
+          skills.
         </p>
         <p className='pb-4 text-base lg:text-lg text-violet-800 dark:text-slate-300'>
           I enjoy collaborating with other developers to build great websites and am
@@ -141,4 +93,5 @@ const About = () => {
     </section>
   );
 };
+
 export default About;

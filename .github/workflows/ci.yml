@@ -1,4 +1,4 @@
-name: workflows
+name: CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  job:
+  build:
     runs-on: ubuntu-latest
 
     steps:

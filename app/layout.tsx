@@ -1,11 +1,11 @@
 import { ThemeProvider } from "@/lib/theme-provider";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-// import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,10 +20,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | my-portfolio",
-    default: "my-portfolio",
+    template: "%s | My Portfolio",
+    default: "My Portfolio",
   },
-  description: "my-portfolio",
+  description: "My Portfolio",
 };
 
 export default function RootLayout({
@@ -40,14 +40,18 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` flex flex-col bg-violet-50 text-black dark:bg-slate-900 dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`flex flex-col max-w-7xl min-h-screen mx-auto bg-violet-50 text-black dark:bg-slate-900 dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <StoreProvider>
           <ThemeProvider
             attribute='class'
             defaultTheme='dark'
             enableSystem
             disableTransitionOnChange>
-            <main className=' flex w-full max-w-screen-2xl mx-auto'> {children}</main>
+            <Navbar />
+            <main className='flex-1 py-4 px-4 md:py-24 lg:py-28 gap-4 md:gap-8'>
+              {children}
+            </main>
+            <Footer />
           </ThemeProvider>
         </StoreProvider>
         <Toaster position='bottom-right' theme='dark' />
