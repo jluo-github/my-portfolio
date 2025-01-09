@@ -10,7 +10,7 @@ Please visit [My portfolio](https://purplecat-portfolio.vercel.app/) for more de
 - **Framer Motion:** Used for creating animations and adding motion effects.
 - **Resend:** Used for email marketing and communication.
 - **GitHub Actions:** Utilized for automating CI/CD workflows.
-- **vitest:** Utilized for unit testing.
+- **Jest:** Utilized for unit testing.
 - **Sentry:** Used for monitoring and tracking errors, performance, and debugging issues in real-time..
 
 ### shadcn
