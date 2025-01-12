@@ -22,27 +22,24 @@ const Navbar = () => {
         isOpen
           ? "bg-violet-100 dark:bg-slate-900"
           : "bg-violet-100/[0.8] dark:bg-slate-900/[0.8]"
-      }`}
-      aria-label='Main Navigation'>
+      }`}>
       <div className=' flex items-center justify-between px-2 py-3 lg:py-4'>
         {/* logo */}
         <Link
-          aria-label='Go to homepage'
+          aria-label='Navigate to homepage'
           href={"/"}
           className='hover:scale-110 active:scale-90 transition-all'
           onClick={() => dispatch(setIsOpen(false))}>
           <Image
             src={logoImg}
             alt='Website logo'
-            width={50}
-            height={50}
-            className='rounded-full object-cover'
+            className='rounded-full object-cover w-12'
           />
         </Link>
 
         {/* menu */}
         <div id='navbar' className='hidden md:flex gap-x-12 mx-8'>
-          <ul className='flex md:flex-row gap-8' aria-label='Main Navigation'>
+          <ul className='flex md:flex-row gap-8'>
             {navLink.map((link) => (
               <li key={link.href}>
                 <NavLink
@@ -65,7 +62,7 @@ const Navbar = () => {
               size='icon'
               onClick={() => dispatch(() => dispatch(setIsOpen(false)))}
               className='shadow-lg shadow-violet-400 hover:scale-105 active:scale-90 transition-all focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:outline-none'
-              aria-label='Close navigation menu'
+              aria-label='Close navigation dropdown menu'
               aria-expanded={isOpen}>
               <FaXmark className='h-6 w-6' />
             </Button>
@@ -75,7 +72,7 @@ const Navbar = () => {
               size='icon'
               onClick={() => dispatch(() => dispatch(setIsOpen(true)))}
               className='shadow-lg shadow-violet-400 hover:scale-105 active:scale-90 transition-all focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:outline-none'
-              aria-label='Open navigation menu'
+              aria-label='Open navigation dropdown menu'
               aria-expanded={isOpen}>
               <IoMdMenu className='h-6 w-6' />
             </Button>

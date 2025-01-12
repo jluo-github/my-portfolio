@@ -63,14 +63,13 @@ const Projects = () => {
                   <div className='flex items-center justify-end gap-16 mt-8 mx-4'>
                     <Button
                       asChild
-                      aria-label={`Navigate to ${project.title} github repository button`}
                       size='icon'
                       variant='link'
-                      className='shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-500 dark:shadow-violet-300 dark:text-violet-700 rounded-full focus-visible:ring-4 focus-visible:ring-violet-400 focus-visible:outline-none'>
+                      className='shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-500 dark:shadow-violet-300 dark:text-violet-700 rounded-full '>
                       <Link
                         href={project.gitUrl}
                         target='_blank'
-                        className='focus-visible:outline-none'
+                        className='focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-violet-400 '
                         aria-label={`Navigate to ${project.title} github repository`}>
                         <FaGithub className='w-10 h-10' />
                       </Link>
@@ -80,11 +79,11 @@ const Projects = () => {
                       asChild
                       size='icon'
                       variant='link'
-                      className='dark:shadow-lg shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-400 dark:shadow-violet-300  dark:text-violet-500 rounded-full focus-visible:ring-4 focus-visible:ring-violet-500 focus-visible:outline-none'>
+                      className='dark:shadow-lg shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-400 dark:shadow-violet-300  dark:text-violet-500 rounded-full'>
                       <Link
                         href={project.previewUrl}
                         target='_blank'
-                        className='focus-visible:outline-none'
+                        className='focus-visible:ring-4 focus-visible:ring-violet-500 focus-visible:outline-none'
                         aria-label={`Navigate to ${project.title} website`}>
                         <CgWebsite className='h-10 w-10 text-muted-foreground' />
                       </Link>

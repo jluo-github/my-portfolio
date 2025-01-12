@@ -50,8 +50,7 @@ const Hero = () => {
             <Link
               href='/#contact'
               tabIndex={-1}
-              className='group hover:scale-105 active:scale-90 transition-all focus-visible:outline-none  '
-              aria-label='Navigate to contact me section'>
+              className='group hover:scale-105 active:scale-90 transition-all focus-visible:outline-none'>
               <BorderMagic
                 title='Contact Me'
                 otherClasses='text-lg sm:text-base'
@@ -66,8 +65,7 @@ const Hero = () => {
             <Link
               href='/#projects'
               tabIndex={-1}
-              className='group hover:scale-105 active:scale-90 transition-all'
-              aria-label='Navigate to projects section'>
+              className='group hover:scale-105 active:scale-90 transition-all'>
               <BorderMagic
                 otherClasses='text-lg'
                 title='Projects'
@@ -87,7 +85,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className='w-full sm:w-3/4 md:w-auto mx-auto flex justify-center sm:justify-start'>
           <div className='flex flex-col items-center justify-center'>
-            <Image src={heroImg} alt='hero image' className='rounded-full object-cover' />
+            <Image src={heroImg} alt='Hero image' className='rounded-full object-cover' />
           </div>
         </motion.div>
       </div>

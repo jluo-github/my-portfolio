@@ -72,8 +72,7 @@ export function ContactForm() {
             icon={
               <FiSend className='ml-4 sm:ml-1 w-6 h-6 group-hover:translate-x-2 group-hover:-translate-y-1 transition ' />
             }
-            position='right'
-            aria-label='Send your email'
+            position='right' 
           />
         </div>
       </form>
