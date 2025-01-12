@@ -47,20 +47,25 @@ export function ContactForm() {
           <Label htmlFor='senderEmail'>Email</Label>
           <Input
             id='senderEmail'
-            placeholder='Your Email'
+            placeholder='Enter your email address'
             type='email'
             name='senderEmail'
+            aria-required='true'
           />
         </LabelInputContainer>
+
         {/* message */}
         <LabelInputContainer className='mb-12'>
           <Label htmlFor='message'>Message</Label>
-          <MotionTextarea placeholder='Your Message' name='message' />
+          <MotionTextarea
+            placeholder='Your Message'
+            name='message'
+            aria-required='true'
+          />
         </LabelInputContainer>
 
         {/* submit button */}
-
-        <div className='flex items-center justify-center group hover:scale-105 active:scale-90 transition-all '>
+        <div className='flex items-center justify-center group hover:scale-105 active:scale-90 transition-all'>
           <BorderMagic
             title='Contact Me'
             otherClasses='text-lg sm:text-base w-full flex mx-auto items-center'
@@ -68,6 +73,7 @@ export function ContactForm() {
               <FiSend className='ml-4 sm:ml-1 w-6 h-6 group-hover:translate-x-2 group-hover:-translate-y-1 transition ' />
             }
             position='right'
+            aria-label='Send your email'
           />
         </div>
       </form>

@@ -19,7 +19,7 @@ const experienceData: ExperienceData[] = [
   },
   {
     metric: "Certifications ",
-    value: "7",
+    value: "10",
     postfix: "+",
   },
   {
@@ -31,30 +31,35 @@ const experienceData: ExperienceData[] = [
 
 const Experience = () => {
   return (
-    <div className='py-8 mx-auto grid grid-cols-1 px-1 lg:px-20 w-full lg:w-3/4'>
-      <Button className='w-full cursor-auto bg-violet-50 dark:bg-slate-900 border-none shadow-xl shadow-violet-400'>
+    <section className='py-8 mx-auto grid grid-cols-1 px-1 lg:px-20 w-full lg:w-3/4'>
+      <Button
+        className='w-full cursor-auto bg-violet-50 dark:bg-slate-900 border-none shadow-xl shadow-violet-400'
+        disabled
+        aria-disabled='true'
+        tabIndex={-1} >
         <div className='flex items-center gap-10 sm:gap-20 md:gap-28 justify-between md:px-20 py-8'>
           {experienceData.map((item, index) => (
             <div key={index} className='flex flex-col gap-2  '>
-              <h1 className='flex flex-row text-4xl font-bold dark:text-white text-violet-900'>
+              <h2 className='flex flex-row text-4xl font-bold dark:text-white text-violet-900'>
                 <AnimatedNumbers
                   transitions={(index) => ({
                     type: "spring",
                     duration: index + 0.3,
                   })}
-                  className=''
                   includeComma
                   animateToNumber={parseInt(item.value)}
                   locale='en-US'></AnimatedNumbers>
                 {item.postfix}
-              </h1>
+              </h2>
 
-              <p className='text-base lg:text-xl text-violet-700 dark:text-slate-400 '>{item.metric}</p>
+              <p className='text-base lg:text-xl text-violet-700 dark:text-slate-400 '>
+                {item.metric}
+              </p>
             </div>
           ))}
         </div>
       </Button>
-    </div>
+    </section>
   );
 };
 export default Experience;

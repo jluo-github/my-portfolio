@@ -1,7 +1,9 @@
 import { render, screen } from "@testing-library/react";
 
 import Hero from "./Hero";
+import console from "console";
 
+ 
 describe("Test Hero component", () => {
   test("render Hero", () => {
     render(<Hero />);

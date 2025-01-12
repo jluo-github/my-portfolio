@@ -45,37 +45,52 @@ const Projects = () => {
                   <CardTitle>{project.title}</CardTitle>
                 </CardHeader>
 
-                <CardContent className=' grid gap-2 group'>
-                  <Link href={project.previewUrl}>
+                <CardContent className='grid gap-2 group'>
+                  <Link
+                    href={project.previewUrl}
+                    className='focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:outline-none'
+                    target='_blank'
+                    aria-label={`Navigate to ${project.title} website`}>
                     <Image
-                      alt={project.title}
-                      className='transform group-hover:scale-110 transition-transform duration-700 shadow-xl shadow-violet-300 dark:shadow-xl dark:shadow-slate-400/[0.5] aspect-square w-full rounded-md object-cover'
+                      alt={`${project.title} project preview`}
+                      className='transform group-hover:scale-110 transition-transform duration-700 shadow-xl shadow-violet-300 dark:shadow-xl dark:shadow-slate-400/[0.5] aspect-square w-full rounded-md object-cover focus-visible:outline-none'
                       height='300'
                       width='300'
                       src={project.image}
                     />
                   </Link>
-                  <div className=' flex items-center justify-end gap-16 mt-8 mx-4'>
+
+                  <div className='flex items-center justify-end gap-16 mt-8 mx-4'>
                     <Button
                       asChild
+                      aria-label={`Navigate to ${project.title} github repository button`}
                       size='icon'
                       variant='link'
-                      className='dark:shadow-lg shadow-xl hover:scale-125 active:scale-90 transition-all shadow-violet-400 dark:text-violet-500'>
-                      <Link href={project.gitUrl} target='_blank' className='h-10 my-2'>
+                      className='shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-500 dark:shadow-violet-300 dark:text-violet-700 rounded-full focus-visible:ring-4 focus-visible:ring-violet-400 focus-visible:outline-none'>
+                      <Link
+                        href={project.gitUrl}
+                        target='_blank'
+                        className='focus-visible:outline-none'
+                        aria-label={`Navigate to ${project.title} github repository`}>
                         <FaGithub className='w-10 h-10' />
                       </Link>
                     </Button>
 
                     <Button
+                      asChild
                       size='icon'
                       variant='link'
-                      className='dark:shadow-lg shadow-xl hover:scale-125 active:scale-90 transition-all shadow-violet-400 dark:text-violet-500'>
-                      <Link href={project.previewUrl} target='_blank'>
-                        <CgWebsite className='h-10 w-10  text-muted-foreground' />
+                      className='dark:shadow-lg shadow-xl hover:scale-110 active:scale-95 transition-all shadow-violet-400 dark:shadow-violet-300  dark:text-violet-500 rounded-full focus-visible:ring-4 focus-visible:ring-violet-500 focus-visible:outline-none'>
+                      <Link
+                        href={project.previewUrl}
+                        target='_blank'
+                        className='focus-visible:outline-none'
+                        aria-label={`Navigate to ${project.title} website`}>
+                        <CgWebsite className='h-10 w-10 text-muted-foreground' />
                       </Link>
                     </Button>
                   </div>
-                  <div className=' '>
+                  <div>
                     {" "}
                     <CardDescription className='text-lg py-4'>
                       {project.description}

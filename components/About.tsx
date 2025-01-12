@@ -26,20 +26,23 @@ const About = () => {
         {/* skills */}
         <Card className='min-h-[500px] flex flex-col xl:w-1/2 items-center justify-start border-none shadow-none bg-transparent'>
           {/* buttons */}
-          <div className='flex justify-center sm:gap-6 md:gap-8 py-4 xl:gap-16'>
+          <div
+            className='flex justify-center sm:gap-6 md:gap-8 py-4 xl:gap-16'
+            aria-live='polite'>
             {skillsData.map((item, index) => (
               <Button
                 key={index}
                 onClick={() => {
                   setSkillId(item.id);
-                }}
+                }}  
                 variant='outline'
+                aria-pressed={item.id === skillId}
                 size='lg'
                 className={`${
                   item.id === skillId
                     ? "bg-violet-100 dark:bg-slate-900 shadow-violet-400"
                     : "bg-violet-50  dark:bg-slate-950  dark:shadow-[0_2px_20px_-1px_rgba(0,0,0,0.1)] shadow-violet-300"
-                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:scale-105 active:scale-90 transition-all`}>
+                }text-violet-800 text-xs sm:text-base border border-violet-200  dark:text-white shadow-xl dark:shadow-violet-400 hover:scale-105 active:scale-90 transition-all focus-visible:ring-4 focus-visible:ring-violet-500`}>
                 {item.title}
               </Button>
             ))}
