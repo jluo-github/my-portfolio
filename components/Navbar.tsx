@@ -10,6 +10,7 @@ import DropDownMenu from "./DropDownMenu";
 import { ModeToggle } from "./ModeToggle";
 import NavLink from "./NavLink";
 import { Button } from "./ui/button";
+import logoImg from "/public/logo.png";
 
 const Navbar = () => {
   const { isOpen } = useAppSelector((state) => state.dropdown);
@@ -31,7 +32,7 @@ const Navbar = () => {
           className='hover:scale-110 active:scale-90 transition-all'
           onClick={() => dispatch(setIsOpen(false))}>
           <Image
-            src='/logo.png'
+            src={logoImg}
             alt='Website logo'
             width={50}
             height={50}

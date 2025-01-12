@@ -6,6 +6,7 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
+import heroImg from "/public/hero5.png";
 
 const Hero = () => {
   return (
@@ -57,7 +58,7 @@ const Hero = () => {
                 icon={
                   <BsEnvelopeAt className='ml-4 sm:ml-1 w-6 h-6 group-hover:translate-x-2 group-hover:-translate-y-1 transition ' />
                 }
-                position='right'        
+                position='right'
               />
             </Link>
 
@@ -86,13 +87,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className='w-full sm:w-3/4 md:w-auto mx-auto flex justify-center sm:justify-start'>
           <div className='flex flex-col items-center justify-center'>
-            <Image
-              src='/hero5.png'
-              width={300}
-              height={300}
-              alt='hero image'
-              className='rounded-full object-cover'
-            />
+            <Image src={heroImg} alt='hero image' className='rounded-full object-cover' />
           </div>
         </motion.div>
       </div>

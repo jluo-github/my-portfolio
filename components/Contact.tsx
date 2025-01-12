@@ -17,7 +17,7 @@ const Contact = () => {
           width={200}
           height={200}
           className='h-full w-full rounded-full'
-          alt='logo'
+          alt='Image of a computer'
         />
       </div>
 
@@ -43,6 +43,7 @@ const Contact = () => {
           <div className='socials flex flex-row gap-8 '>
             <Link
               href='https://github.com/jluo-github'
+              aria-label='Navigate to github'
               target='_blank'
               className='bg-transparent focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:outline-none'>
               <SiGithub className='w-10 h-10 hover:scale-125 active:scale-90 transition-all shadow-xl shadow-violet-500 dark:shadow-violet-300  rounded-full' />
@@ -50,6 +51,7 @@ const Contact = () => {
 
             <Link
               href='https://linkedin.com/in/jluo23'
+              aria-label='Navigate to linkedin'
               target='_blank'
               className='bg-transparent focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:outline-none'>
               <svg
